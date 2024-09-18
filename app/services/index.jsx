@@ -12,7 +12,7 @@ const axiosIntanceNonAuth = axios.create({
 });
 
 const axiosTest = axios.create({
-  baseURL: "http://localhost:3333",
+  baseURL: "https://vercel.com/phihungs-projects/api-face-fake",
 });
 
 export { axiosIntanceAuth, axiosIntanceNonAuth, axiosTest };
