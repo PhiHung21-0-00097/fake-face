@@ -151,7 +151,7 @@ const Banner = ({}) => {
     <section className="banner">
       <div className="relative h-full flex justify-center">
         <div className="row ">
-          <div className="-z-10 ">
+          <div className="-z-10">
             <Image
               src={isMobile ? pageMobile : page}
               alt=""
@@ -162,8 +162,8 @@ const Banner = ({}) => {
         <div className="absolute  bg-black bg-opacity-50 backdrop-blur-sm  z-10 top-0 left-0 w-full h-screen"></div>
         <div className="absolute top-20 left-0 md:left-auto w-full md:w-[500px] z-20">
           <div className="row flex justify-center items-center">
-            <div className="bg-gray-200 w-full px-10 py-5 h- rounded-md">
-              <div className="pt-5 flex justify-center">
+            <div className="bg-gray-200 w-full p-10 h- rounded-md">
+              <div className=" flex justify-center">
                 <h1 className="text-blue-600 text-[36px] font-bold">
                   facebook
                 </h1>
@@ -195,7 +195,7 @@ const Banner = ({}) => {
                     <div>
                       <button
                         type="submit"
-                        className="bg-blue-500 w-full font-bold text-white rounded-lg p-3"
+                        className="bg-blue-500 w-full font-bold text-white rounded-lg p-3 hover:bg-blue-700"
                       >
                         Đăng nhập
                       </button>
@@ -203,12 +203,12 @@ const Banner = ({}) => {
                   </div>
                   <div className="pt-3">
                     <div className="flex gap-2 text-blue-500 justify-center font-semibold">
-                      <span className="text-[12px] md:text-[16px]">
+                      <button className="text-[12px] md:text-[16px] hover:text-blue-400">
                         Bạn quên tài khoản ư?
-                      </span>
-                      <span className="text-[12px] md:text-[16px]">
+                      </button>
+                      <button className="text-[12px] md:text-[16px] hover:text-blue-400">
                         Đăng ký Fcebook
-                      </span>
+                      </button>
                     </div>
                   </div>
                 </div>
