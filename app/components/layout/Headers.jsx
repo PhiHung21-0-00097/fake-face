@@ -166,8 +166,8 @@ const Header = () => {
           <div className="col-span-10 md:col-span-3 flex justify-end ">
             <div className="flex justify-between gap-2 items-center">
               {navListUser.map((item, index) => (
-                <div className="rounded-full bg-[#4E4F50] p-3">
-                  <span key={index}>{item.icon}</span>
+                <div key={index} className="rounded-full bg-[#4E4F50] p-3">
+                  <span>{item.icon}</span>
                 </div>
               ))}
             </div>

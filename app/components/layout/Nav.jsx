@@ -14,7 +14,7 @@ const Nav = async ({ lng }) => {
     },
     {
       id: 2,
-      title: t("header.features"),
+    title: t("header.features"),
       href: "features",
     },
     {
