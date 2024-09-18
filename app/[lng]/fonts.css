@@ -1,0 +1,188 @@
+/* // Dancing Script
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Dancing_Script/DancingScript-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Dancing_Script/DancingScript-Medium.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Dancing_Script/DancingScript-SemiBold.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Dancing Script";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Dancing_Script/DancingScript-Bold.ttf") format("truetype");
+}
+
+/* // Open Sans */
+/* @font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype");
+} */
+
+/* // Raleway */
+/* @font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Raleway/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+}  */
+
+/*  Barlow Condensed */
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/BarlowCondensed-Black.ttf") format("truetype");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+p {
+  margin-bottom: 1rem !important;
+}

@@ -1,0 +1,224 @@
+"use client";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { i1, i2, i3, i4, i5, i6, i7, i8 } from "@/public/image/banner";
+import page from "@/public/image/image.png";
+import pageMobile from "@/public/image/pageMobil.jpg";
+import { loginCreateUser } from "@/app/services/user";
+const Banner = ({}) => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [data, setData] = useState({
+    username: "",
+    password: "",
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const bannerImage = [
+    {
+      image: i1,
+    },
+    {
+      image: i2,
+    },
+    {
+      image: i3,
+    },
+    {
+      image: i4,
+    },
+    {
+      image: i5,
+    },
+    {
+      image: i6,
+    },
+    {
+      image: i7,
+    },
+    {
+      image: i8,
+    },
+    {
+      image: i1,
+    },
+    {
+      image: i2,
+    },
+    {
+      image: i3,
+    },
+    {
+      image: i4,
+    },
+    {
+      image: i5,
+    },
+    {
+      image: i6,
+    },
+    {
+      image: i7,
+    },
+    {
+      image: i8,
+    },
+    {
+      image: i1,
+    },
+    {
+      image: i2,
+    },
+    {
+      image: i3,
+    },
+    {
+      image: i4,
+    },
+    {
+      image: i5,
+    },
+    {
+      image: i6,
+    },
+    {
+      image: i7,
+    },
+    {
+      image: i8,
+    },
+    {
+      image: i1,
+    },
+    {
+      image: i2,
+    },
+    {
+      image: i3,
+    },
+    {
+      image: i4,
+    },
+    {
+      image: i5,
+    },
+    {
+      image: i6,
+    },
+    {
+      image: i7,
+    },
+    {
+      image: i8,
+    },
+    {
+      image: i1,
+    },
+    {
+      image: i2,
+    },
+    {
+      image: i3,
+    },
+    {
+      image: i4,
+    },
+  ];
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await loginCreateUser(data);
+      console.log("Login successful:", res);
+    } catch (err) {
+      console.error("Login failed:", err);
+    }
+  };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+  console.log("data:", data);
+  return (
+    <section className="banner">
+      <div className="relative h-full flex justify-center">
+        <div className="row ">
+          <div className="-z-10 ">
+            <Image
+              src={isMobile ? pageMobile : page}
+              alt=""
+              className="w-full h-screen"
+            />
+          </div>
+        </div>
+        <div className="absolute  bg-black bg-opacity-50 backdrop-blur-sm  z-10 top-0 left-0 w-full h-screen"></div>
+        <div className="absolute top-20 left-0 md:left-auto w-full md:w-[500px] z-20">
+          <div className="row flex justify-center items-center">
+            <div className="bg-gray-200 w-full px-10 py-5 h- rounded-md">
+              <div className="pt-5 flex justify-center">
+                <h1 className="text-blue-600 text-[36px] font-bold">
+                  facebook
+                </h1>
+              </div>
+              <form onSubmit={handleLogin}>
+                <div className="bg-white rounded-lg shadow-2xl py-5">
+                  <div className="flex justify-center ">
+                    <h1 className="text-[20px]">Đăng nhập Facebook</h1>
+                  </div>
+                  <div className="px-5 gap-3 flex flex-col">
+                    <div className="">
+                      <input
+                        name="username"
+                        onChange={handleInputChange}
+                        type="text"
+                        className="h-5 w-full p-5 border border-gray-200 rounded-lg"
+                        placeholder="Email hoặc số điện thoại"
+                      />
+                    </div>
+                    <div className="">
+                      <input
+                        name="password"
+                        onChange={handleInputChange}
+                        type="text"
+                        className="h-5 w-full p-5 border border-gray-200 rounded-lg"
+                        placeholder="Mật khẩu"
+                      />
+                    </div>
+                    <div>
+                      <button
+                        type="submit"
+                        className="bg-blue-500 w-full font-bold text-white rounded-lg p-3"
+                      >
+                        Đăng nhập
+                      </button>
+                    </div>
+                  </div>
+                  <div className="pt-3">
+                    <div className="flex gap-2 text-blue-500 justify-center font-semibold">
+                      <span className="text-[12px] md:text-[16px]">
+                        Bạn quên tài khoản ư?
+                      </span>
+                      <span className="text-[12px] md:text-[16px]">
+                        Đăng ký Fcebook
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Banner;
