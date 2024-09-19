@@ -15,7 +15,8 @@ export async function generateMetadata({ params: { lng } }) {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(lng, "home");
   return {
-    title: t("home") + " - " + t("home"),
+    title: t("Facebook"),
+    //  + " - " + t("Facebook")
     icons: "/icon.ico",
   };
 }

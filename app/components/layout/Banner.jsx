@@ -149,7 +149,7 @@ const Banner = ({}) => {
   console.log("data:", data);
   return (
     <section className="banner">
-      <div className="relative h-full flex justify-center">
+      <div className="relative  h-full flex justify-center">
         <div className="row ">
           <div className="-z-10">
             <Image
@@ -160,7 +160,7 @@ const Banner = ({}) => {
           </div>
         </div>
         <div className="absolute  bg-black bg-opacity-50 backdrop-blur-sm  z-10 top-0 left-0 w-full h-screen"></div>
-        <div className="absolute top-20 left-0 md:left-auto w-full md:w-[500px] z-20">
+        <div className="absolute top-20 left-auto w-full sm:w-[500px]  z-20">
           <div className="row flex justify-center items-center">
             <div className="bg-gray-200 w-full p-10 h- rounded-md">
               <div className=" flex justify-center">

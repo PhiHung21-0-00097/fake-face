@@ -134,14 +134,14 @@ const Header = () => {
     <header className="bg-[#242526]">
       <div className="">
         <div className="grid grid-cols-12 md:gap-10">
-          <div className="col-span-2 md:col-span-3 flex justify-center ">
+          <div className="col-span-2 lg:col-span-3 flex justify-start ">
             <div className="flex">
               <div className="flex items-center justify-center">
                 <Link href="/">
                   <Image src={fb} alt="" className="max-w-16 h-auto" />
                 </Link>
               </div>
-              <div className="hidden md:flex py-3">
+              <div className="hidden lg:flex py-3">
                 <input
                   type="text"
                   className="bg-[#3A3B3C] text-[#B0B3B8] pl-5 h-auto w-full rounded-full"
@@ -150,7 +150,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-6 md:flex justify-center hidden">
+          <div className="col-span-6 lg:flex justify-center hidden">
             <nav className="flex items-center ">
               <ul className="flex justify-between">
                 {navListHeader.map((item, index) => (
@@ -163,7 +163,7 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-          <div className="col-span-10 md:col-span-3 flex justify-end ">
+          <div className="col-span-10 lg:col-span-3 flex justify-end ">
             <div className="flex justify-between gap-2 items-center">
               {navListUser.map((item, index) => (
                 <div key={index} className="rounded-full bg-[#4E4F50] p-3">

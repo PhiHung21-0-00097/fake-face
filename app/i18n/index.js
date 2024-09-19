@@ -10,8 +10,8 @@ const initI18next = async (lng, ns) => {
     .use(
       resourcesToBackend(
         (language, namespace) =>
-          import(`./locales/${language}/${namespace}.json`)
-      )
+          import(`./locales/${language}/${namespace}.json`),
+      ),
     )
     .init(getOptions(lng, ns));
   return i18nInstance;
