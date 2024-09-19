@@ -12,7 +12,7 @@ const axiosIntanceNonAuth = axios.create({
 });
 
 const axiosTest = axios.create({
-  baseURL: "http://test-deploy-nestjs-5z1q.vercel.app",
+  baseURL: "https://test-deploy-nestjs-5z1q.vercel.app",
 });
 
 export { axiosIntanceAuth, axiosIntanceNonAuth, axiosTest };
