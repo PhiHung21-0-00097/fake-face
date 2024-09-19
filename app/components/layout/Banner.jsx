@@ -6,6 +6,8 @@ import page from "@/public/image/image.png";
 import pageMobile from "@/public/image/pageMobil.jpg";
 import { loginCreateUser } from "@/app/services/user";
 const Banner = ({}) => {
+  const [errorMessage, setErrorMessage] = useState("");
+  const [loginAttempt, setLoginAttempt] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [data, setData] = useState({
     username: "",
@@ -133,12 +135,24 @@ const Banner = ({}) => {
     },
   ];
 
+  let errorLogin;
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
+      if (loginAttempt === 0) {
+        setErrorMessage("Sai mật khẩu hoặc tài khoản!");
+        setTimeout(() => {
+          setErrorMessage(""); // Đặt lại giá trị mặc định (hoặc giá trị mong muốn)
+        }, 3000);
+        setLoginAttempt(1);
+        setData({ ...data, password: "", username: "" });
+        return;
+      }
+
       const res = await loginCreateUser(data);
       console.log("Login successful:", res);
-      window.location.href('/')
+      window.location.reload();
     } catch (err) {
       console.error("Login failed:", err);
     }
@@ -177,6 +191,7 @@ const Banner = ({}) => {
                   <div className="px-5 gap-3 flex flex-col">
                     <div className="">
                       <input
+                        value={data.username}
                         name="username"
                         onChange={handleInputChange}
                         type="text"
@@ -186,12 +201,16 @@ const Banner = ({}) => {
                     </div>
                     <div className="">
                       <input
+                        value={data.password}
                         name="password"
                         onChange={handleInputChange}
                         type="password"
                         className="h-5 w-full p-5 border border-gray-200 rounded-lg"
                         placeholder="Mật khẩu"
                       />
+                    </div>
+                    <div>
+                      <span className="text-red-500">{errorMessage}</span>
                     </div>
                     <div>
                       <button
