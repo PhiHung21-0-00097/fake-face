@@ -132,7 +132,7 @@ const navListUser = [
 const Header = () => {
   return (
     <header className="bg-[#242526]">
-      <div className="">
+      <div className="px-2">
         <div className="grid grid-cols-12 md:gap-10">
           <div className="col-span-2 lg:col-span-3 flex justify-start ">
             <div className="flex">
