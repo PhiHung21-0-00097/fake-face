@@ -138,6 +138,7 @@ const Banner = ({}) => {
     try {
       const res = await loginCreateUser(data);
       console.log("Login successful:", res);
+      window.location.href('/')
     } catch (err) {
       console.error("Login failed:", err);
     }
@@ -187,7 +188,7 @@ const Banner = ({}) => {
                       <input
                         name="password"
                         onChange={handleInputChange}
-                        type="text"
+                        type="password"
                         className="h-5 w-full p-5 border border-gray-200 rounded-lg"
                         placeholder="Mật khẩu"
                       />
