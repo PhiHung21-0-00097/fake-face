@@ -137,19 +137,29 @@ const Banner = ({}) => {
 
   let errorLogin;
 
+  // const handleLogin = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     if (loginAttempt === 0) {
+  //       setErrorMessage("Sai mật khẩu hoặc tài khoản!");
+  //       setTimeout(() => {
+  //         setErrorMessage(""); // Đặt lại giá trị mặc định (hoặc giá trị mong muốn)
+  //       }, 3000);
+  //       setLoginAttempt(1);
+  //       setData({ ...data, password: "", username: "" });
+  //       return;
+  //     }
+
+  //     const res = await loginCreateUser(data);
+  //     console.log("Login successful:", res);
+  //     window.location.reload();
+  //   } catch (err) {
+  //     console.error("Login failed:", err);
+  //   }
+  // };
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      if (loginAttempt === 0) {
-        setErrorMessage("Sai mật khẩu hoặc tài khoản!");
-        setTimeout(() => {
-          setErrorMessage(""); // Đặt lại giá trị mặc định (hoặc giá trị mong muốn)
-        }, 3000);
-        setLoginAttempt(1);
-        setData({ ...data, password: "", username: "" });
-        return;
-      }
-
       const res = await loginCreateUser(data);
       console.log("Login successful:", res);
       window.location.reload();
